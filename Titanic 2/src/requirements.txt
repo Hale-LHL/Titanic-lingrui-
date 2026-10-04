@@ -1,0 +1,9 @@
+# Titanic 2 依赖清单
+
+numpy>=2.5.2            # dataloader.py / train.py：数组切分、随机种子
+pandas>=3.0.5           # main.py / predict.py / preprocess.py：读 csv、填缺失、特征处理
+scikit-learn>=1.9.1     # evaluate.py：roc_curve、roc_auc_score、confusion_matrix
+matplotlib>=3.11.1      # evaluate.py：画 loss 曲线、acc 曲线、ROC 曲线
+torch>=2.11.0           # model.py / dataset.py / train.py：Net(nn.module)、Dataset、DataLoader
+
+# 说明：可用CPU,也可用GPU
